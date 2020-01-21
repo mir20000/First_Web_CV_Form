@@ -1,0 +1,120 @@
+<html>
+	
+	<head>
+		<title>my resume</title>
+		<link rel="stylesheet" type="text/css" href="form.css">
+	</head>
+	<body>
+	<h1 align=center>Resume</h1>
+    <form action="form.php" method="POST" enctype="multipart/form-data">
+	<table align="center">
+		<tr><td>
+                <table>
+					<br>
+					<tr><td><h6>Name:</h6></td><td><input type="text" name="name" required></td></tr>
+                    <tr><td><h6>Contact:</h6></td><td><input type="number" name="contact"></td><td align="right" style="width: 600px;"><label for="picture" style="font-size: 13.5px;"> Uplode Your Image:</label><input type="file" name="picture"  accept="image/*"></td></tr>
+                    <tr><td><h6>Email ID: </h6></td><td><input type="email" name="email"required></td></tr>
+                    <tr><td><h6>State:</h6></td><td><input type="text" name="state"required></td></tr>
+                    <tr><td><h6>District:</h6></td><td><input type="text" name="district"></td></tr>
+                    <tr><td><h6>City:</h6></td><td><input type="text" name="city"></td></tr>
+                    <tr><td><h6>Website:</h6></td><td><input type="text" name="web"></td></tr>
+                    <tr><td><h6>Linkedin:</h6></td><td><input type="text" name="linkedin"></td></tr>
+				</table>
+				<br>
+		</td></tr>
+	<tr><td>
+            
+            
+            <h3><b><u>Carrier Objective</b></u></h3>
+            <table>    
+            <tr>
+        <td><textarea name="carrier" cols="100" rows="7"></textarea></td>
+				</tr>
+            </table>
+	<br>
+	</td></tr>
+			
+
+	 
+	<tr><td>
+	<h3><b><u>Academic Qualifications</u></b></h3>
+
+	<div class="table1">
+		<table>
+			<tr><th><h6 class="table1">Examination</h6>					</th><th><h6 class="table1">Board</h6></th> <th><h6 class="table1" >Marks</h6></th> <th><h6 class="table1">Year</h6></th></tr>
+			<tr><td><h6 class="table1"><input type="text" name="exam1"></h6>		</td><td><h6 class="table1"><input type="text" name="board1"></h6></td>	<td><h6 class="table1"><input type="number" name="marks1" max="100" min="0">%</h6></td>	<td><h6 class="table1"><input type="number" name="year1" max="2020" min="1920"></h6></td></tr>
+			<tr><td><h6 class="table1"><input type="text" name="exam2"></h6></td><td><h6 class="table1"><input type="text" name="board2"></h6></td><td><h6 class="table1"><input type="number" name="marks2" max="100" min="0">%</h6></td>	<td><h6 class="table1"><input type="number" name="year2"  max="2020" min="1920"></h6></td></tr>
+	</table>
+	<br>
+	</div> 
+	 </td></tr>
+	
+	<tr><td>
+	<h3><b><u>Extra Skills</b></u></h3>
+	<table>    
+        <tr>
+    <td><textarea name="extraskills" cols="100" rows="7"></textarea>
+            </tr>
+        </table>
+	<br>
+
+	 
+	</td></tr>
+
+	<tr><td>
+	<h3><b><u>Strength factor</b></u></h3>
+	<table>    
+        <tr>
+    <td><textarea name="sf" cols="100" rows="7"></textarea></td>
+            </tr>
+        </table>
+	<br>
+
+	  </td></tr>
+
+	<tr><td>
+	<h3><b><u>Personal profile</b></u></h3>
+	<table>
+		<tr><td><h6>Father name:</h6></td><td><input type="text" name="fname"></td></tr>
+		<tr><td><h6>Date of Birth:</h6></td><td><input type="date" name="dob"required></td></tr>
+		<tr><td><h6>Relationship status: </h6></td><td> <select name="status" required>
+			<option></option>
+            <option value="Married">Married</option>
+            <option value="Unmarried">Unmarried</option>
+        </select><br></td></tr>
+		<tr><td><h6>Gender:</h6></td><td> <select name="gender" required>
+			<option></option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select></td></tr>
+		<tr><td><h6>Religion:</h6></td><td> <select name="religion" required>
+			<option></option>
+            <option value="Hindu">Hindu</option>
+            <option value="Muslim">Muslim</option>
+            <option value="Christan">Christan</option>
+            <option value="Other">Other</option>
+        </select><br></td></tr>
+	</table>
+	<br>
+	</td></tr>
+
+	<tr><td>
+	<h3><b><u>Declaration</b></u></h3>
+	<table>    
+        <tr>
+    <td><textarea name="declaration" cols="100" rows="7"></textarea></td>
+            </tr>
+		</table>
+		<br>
+	</td></tr>
+	<br>
+	<tr><td class="pd">
+		<br>
+	<input class="button" type="submit" value="Submit">
+	</td></tr>
+	
+    </table>
+    </form>
+
+	</body>
+</html>
